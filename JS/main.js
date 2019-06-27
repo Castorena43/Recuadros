@@ -1,6 +1,10 @@
 $(document).ready(function(){
-    $('.b1').click(function(){
+    function blanco(){
         $('div').css({"background-color":"white"});
+    }
+    $('.b1').click(function(){
+        blanco();
+        // $('div').css({"background-color":"white"});
         $('.row').find('div').eq(0).css({"background-color":"green"})
         .end()
         .eq(7).css({"background-color":"green"})
@@ -10,7 +14,7 @@ $(document).ready(function(){
         .eq(63).css({"background-color":"green"});        
     });
     $('.b2').click(function(){
-        $('div').css({"background-color":"white"});
+        blanco();
         $('.row').find('div').eq(0).css({"background-color":"green"})
         .end()
         .eq(1).css({"background-color":"green"})
@@ -56,7 +60,7 @@ $(document).ready(function(){
         .eq(63).css({"background-color":"green"});
     });
     $('.b3').click(function(){
-        $('div').css({"background-color":"white"});
+        blanco();
         $('.row').find('div').eq(0).css({"background-color":"green"})
         .end()
         .eq(9).css({"background-color":"green"})
@@ -250,5 +254,8 @@ $(document).ready(function(){
         .eq(35).css({"background-color":"green"})
         .end()
         .eq(36).css({"background-color":"green"});        
+    });
+    $('.b9').click(function(){
+        $('div').css({"background-color":"white"});
     });
 })
